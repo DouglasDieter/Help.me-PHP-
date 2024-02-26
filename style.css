@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-image: url(img/White-Background-PNG-Photos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20rem;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container-um{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-dois{
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.conainer-form{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    text-align: center;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    border-width: 0.12rem;
+    border-color: black;
+    border-style: solid;
+    letter-spacing: 0.05rem;
+    font-size: 1rem;
+}
+.botao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 20.5rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    transition: 0.2s;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+    cursor: pointer;
+}
+.container-button{
+    display: grid;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.register-button{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.links{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+#login{
+    margin-right: 0.54rem;
+}
+@media screen and (max-width: 600px) {
+    .wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container-um{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-dois{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 345px) {
+    .wrap{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container-um{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-dois{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .login{
+        width: 95%;
+    }
+    .botao{
+        width: 98.4%;
+    }
+}
