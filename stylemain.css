@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+.forum{
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-right: 2rem;margin-top: 2rem;
+}
+.barra{
+    background-color: none;
+    margin-left: 1.35rem;
+    margin-right: 1.35rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.titulo{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.container-body{
+    margin: 2rem 2rem 0 2rem;
+}
+.itens{
+    text-decoration: none;
+}
+.titulo-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+.head-cartao{
+    margin: 0 2rem 0 2rem;
+}
+.add-forum{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0.5rem 2rem 0.5rem 2rem;
+}
+.botao-forum{
+    border-style: dashed;
+    border-color: rgb(216, 216, 216);
+    border-radius: 5px;
+    border-width: 0.11rem;
+    background-color: white;
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+    transition: 0.3s;
+}
+.cartao-link{
+    text-decoration: none;
+}
+.perfil-fóruns{
+    margin: 0 2rem 0 2rem;
+}
+h5.card-header{
+    background-color: black;
+    color: white;
+}
+.perg{
+    margin: 1rem 2rem 0 2rem;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 3px;
+}
