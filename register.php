@@ -15,11 +15,10 @@
 
          <div class="container-form">
             <form method="post">
-            <input type="text" name="nome" placeholder="Nome" class="login" required><br>
             <input type="email" name="email" class="login" placeholder="E-mail" required><br>
             <input type="text" name="login" placeholder="Login" class="login" required>
             <br>
-            <input type="password" name="senha" placeholder="Senha" class="login" required><br>
+            <input type="password" name="senha" placeholder="Senha (fictícia)" class="login" required><br>
             <div class="container-button">
             <input type="submit" class="login botao" value="CADASTRAR"></input>
             </div>
@@ -36,12 +35,11 @@
            session_start();
            $usuario = new UsuarioDAO();
            if($_SERVER["REQUEST_METHOD"]=="POST"){
-            $nome = $_POST['nome'];
             $email = $_POST['email'];
             $login = $_POST['login'];
             $senha = $_POST['senha'];
             
-            $usuario->incluir($nome, $email, $login, $senha);
+            $usuario->incluir($email, $login, $senha);
            }
         ?>
 </body>
