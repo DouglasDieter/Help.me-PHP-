@@ -2,11 +2,11 @@
 include 'ConexaoBD.php';
 class UsuarioDAO {
     
-    public function incluir($nome,$email,$login, $senha) {
+    public function incluir($email,$login, $senha) {
         $conexao = new ConexaoBD();
         $conecta = $conexao->conectar(); 
         // Inserir registro
-        $sql = "INSERT INTO `dbusuarios` (`idusuario`, `nomeusuario`, `emailusuario`, `loginusuario`, `senhausuario`) VALUES (NULL, '$nome', '$email', '$login', '$senha');";
+        $sql = "INSERT INTO `usuario` (`idusuario`, `email`, `login`, `senha`) VALUES (NULL, '$email', '$login', '$senha');";
         if ($conecta->query($sql) === TRUE) {
             echo "<script>"."alert('Conta criada com sucesso');"."</script>";
             die;
@@ -76,7 +76,7 @@ class UsuarioDAO {
         $conexao = new ConexaoBD();
         $conecta = $conexao->conectar();
         
-        $sql = "SELECT senhausuario, loginusuario FROM dbusuarios WHERE senhausuario='$senha' and loginusuario='$usuario'";
+        $sql = "SELECT senha, login FROM usuario WHERE senha='$senha' and login='$usuario'";
         $resultado = $conecta->query($sql);
         if ($resultado->num_rows > 0) {
         // saída dos dados
