@@ -3,7 +3,7 @@ class ConexaoBD {
     private $nome_servidor = "localhost";
     private $nome_usuario = "root";
     private $senha = "";
-    private $banco = "help.me";
+    private $banco = "helpme";
     private $porta = "3306";
     private $conecta;
     
@@ -12,7 +12,7 @@ class ConexaoBD {
     }
 
     public function conectar() {
-        $this->conecta = new mysqli("localhost", "root", "", "help.me");
+        $this->conecta = new mysqli("localhost", "root", "", "helpme");
         // Verificar Conexão
         if ($this->conecta->connect_error) {
             die("Conexão falhou: " . $this->conecta->connect_error."<br>");
